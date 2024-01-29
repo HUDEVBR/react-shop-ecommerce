@@ -1,3 +1,4 @@
+import { Search, SearchOutlined, SelectAll } from '@material-ui/icons'
 import React from 'react'
 import styled from 'styled-components'
 
@@ -20,7 +21,9 @@ const Language = styled.span`
     font-size: 14px;
     cursor: pointer;
 `
-
+const SearchContainer = styled.div`
+    background-color: transparent;
+`
 
 const Center = styled.div`
     flex: 1;    
@@ -35,6 +38,10 @@ const Navbar = () => {
           <Wrapper>
               <Left>
                   <Language>EN</Language>
+                  <SearchContainer>
+                      input 
+                      <Search/>
+                  </SearchContainer>
               </Left>
               <Center>center</Center>
               <Right>right</Right>
@@ -43,4 +50,4 @@ const Navbar = () => {
   )
 }
 
-export default Navbar
+e
