@@ -1,4 +1,4 @@
-import { Search, SearchOutlined, SelectAll } from '@material-ui/icons'
+import { Search } from '@material-ui/icons'
 import React from 'react'
 import styled from 'styled-components'
 
@@ -50,4 +50,4 @@ const Navbar = () => {
   )
 }
 
-e
+export default Navbar
