@@ -1,11 +1,13 @@
 import { ArrowLeftOutlined, ArrowRightOutlined } from "@material-ui/icons";
 import styled from "styled-components"
+import backgroundLogo from "../assets/background_jfmateriais_01.png";
 
 const Container = styled.div`
-    width: 100%;
+    width: 100vw;
     height: 100vh;
     display: flex;
-    background-color: #b14464;
+    background-image: url(${backgroundLogo});
+    background-repeat: no-repeat;
     position: relative;
 `;
 
@@ -32,16 +34,23 @@ const Wrapper = styled.div`
 `;
 
 const Slide = styled.div`
+    width: 100vw;
+    height: 100vh;
     display: flex;
     align-items: center;
 `;
 
 const ImgContainer = styled.div`
+    height: 100%;
     flex: 1;
+    
 `;
 
 const Image = styled.img`
-
+    display: flex;
+    align-items: center;
+    width: 100vw;
+    height: fit-content;
 `;
 
 const InfoContainer = styled.div`
@@ -56,12 +65,12 @@ const Slider = () => {
                 <ArrowLeftOutlined/>
             </Arrow>
             <Wrapper>
+                <Slide>
                 <ImgContainer>
-                    <Image src="https://i.ibb.co/XsdmR2c/1.png" />
+                    
                 </ImgContainer>
-                <InfoContainer>
-
-                </InfoContainer>
+                <InfoContainer></InfoContainer>
+                </Slide>
             </Wrapper>
             <Arrow direction="right">
                 <ArrowRightOutlined/>
