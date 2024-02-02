@@ -51,11 +51,13 @@ const Right = styled.div`
     flex: 1;    
     display: flex;
     align-items: center;
+    justify-content: flex-end;
 `;
 
 const MenuItem = styled.div`
     font-size: 14px;
     cursor: pointer;
+    margin-left: 25px;
 `
 
 const Navbar = () => {
@@ -63,16 +65,16 @@ const Navbar = () => {
       <Container>
           <Wrapper>
               <Left>
-                  <Language>EN</Language>
+                  <Language>BR</Language>
                   <SearchContainer>
                       <Input/> 
-                      <Search/>
+                      <Search style={{color:"gray", fontSize:16}} />
                   </SearchContainer>
               </Left>
-              <Center><Logo>HUDSON.</Logo></Center>
+              <Center><Logo>J F MATERIAIS.</Logo></Center>
               <Right>
-                  <MenuItem>REGISTER</MenuItem>
-                  <MenuItem>SIGN IN</MenuItem>
+                  <MenuItem>REGISTRAR</MenuItem>
+                  <MenuItem>LOGAR</MenuItem>
                   <MenuItem>
                     <Badge badgeContent={4} color="primary"> <ShoppingCartOutlined/></Badge>
                   </MenuItem>
