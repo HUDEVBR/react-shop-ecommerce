@@ -6,8 +6,8 @@ import Slider from '../components/Slider'
 const Home = () => {
   return (
     <div className="container">
-      <Announcement/>
-      <Navbar />
+      <Announcement />
+      <Navbar/>
       <Slider/>
       </div>
   )
