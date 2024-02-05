@@ -1,13 +1,13 @@
 import { ArrowLeftOutlined, ArrowRightOutlined } from "@material-ui/icons";
 import styled from "styled-components"
-import disjuntor from "../assets/ge_disjuntor_01-removed.png";
+import { useState } from "react";
+import { sliderItems } from "../data";
 
 
 const Container = styled.div`
     width: 100%;
     height: 100vh;
     display: flex;
-    /* background-color: #2e3092; */
     position: relative;
     overflow: hidden;
 `;
@@ -28,11 +28,13 @@ const Arrow = styled.div`
     margin: auto;
     cursor: pointer;
     opacity: 0.6;
+    z-index:2;
 `;
 
 const Wrapper = styled.div`
     height: 100%;   
     display: flex;
+    transform: translateX(0vw);
 `;
 
 const Slide = styled.div`
@@ -40,6 +42,7 @@ const Slide = styled.div`
     height: 100vh;
     display: flex;
     align-items: center;
+    background-color: ${props=>props.bg};
 `;
 
 const ImgContainer = styled.div`
@@ -51,8 +54,7 @@ const Image = styled.img`
     position: relative;
     top: 25%;
     left: 20%;
-   height: 45%;
-   width: 30%;
+    height: 45%;
 `;
 
 const InfoContainer = styled.div`
@@ -62,7 +64,7 @@ const InfoContainer = styled.div`
 
 const Title = styled.h1`
     font-size: 70px;
-    color: #000000;  
+    color: #ffffff;  
 `;
 
 const Desc = styled.p`
@@ -70,7 +72,7 @@ const Desc = styled.p`
     font-size: 20px;
     font-weight: 800;
     letter-spacing: 3px;
-    color: #000000;
+    color: #ffffff;
 `;
 
 const Button = styled.button`
@@ -79,42 +81,37 @@ const Button = styled.button`
     font-weight: 800;
     background-color: transparent;
     cursor: pointer;
-    color: #000000;
+    color: #ffffff;
 `;
 
 const Slider = () => {
+    const [slideIndex, setSlideIndex] = useState(0)
+    const handleClick = (direction) => {
+
+    };
+
     return (
         <Container>
-            <Arrow direction="left">
+            <Arrow direction="left" onClick={()=>handleClick("left")}>
                 <ArrowLeftOutlined />
             </Arrow>
             <Wrapper>
-                <Slide>
+                {sliderItems.map(item => ( 
+                    <Slide bg={item.bg}>
                     <ImgContainer>
-                        <Image src={disjuntor} width={150} />
+                        <Image src={item.img} width={200} />
                     </ImgContainer>
                     <InfoContainer>
-                        <Title>DISJUNTORES</Title>
+                        <Title>{item.title}</Title>
                         <Desc>
-                            Disjuntor para chuveiro elétrico, fiação de casas e apartamentos e demais eletrodomésticos
+                            {item.desc}
                         </Desc>
                         <Button>Comprar</Button>
                     </InfoContainer>
                 </Slide>
-                <Slide>
-                    <ImgContainer>
-                        <Image src={disjuntor} width={150} />
-                    </ImgContainer>
-                    <InfoContainer>
-                        <Title>DISJUNTORES</Title>
-                        <Desc>
-                            Disjuntor para chuveiro elétrico, fiação de casas e apartamentos e demais eletrodomésticos
-                        </Desc>
-                        <Button>Comprar</Button>
-                    </InfoContainer>
-                </Slide>
+            ))}
             </Wrapper>
-            <Arrow direction="right">
+            <Arrow direction="right" onClick={()=>handleClick("right")}>
                 <ArrowRightOutlined />
             </Arrow>
         </Container>
