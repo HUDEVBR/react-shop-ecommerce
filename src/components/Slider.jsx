@@ -34,7 +34,7 @@ const Arrow = styled.div`
 const Wrapper = styled.div`
     height: 100%;   
     display: flex;
-    transform: translateX(0vw);
+    transform: translateX(${(props)=> props.slideIndex * -100}vw);
 `;
 
 const Slide = styled.div`
@@ -54,7 +54,7 @@ const Image = styled.img`
     position: relative;
     top: 25%;
     left: 20%;
-    height: 45%;
+   height: 45%;
 `;
 
 const InfoContainer = styled.div`
@@ -64,7 +64,7 @@ const InfoContainer = styled.div`
 
 const Title = styled.h1`
     font-size: 70px;
-    color: #ffffff;  
+    color: #000000;  
 `;
 
 const Desc = styled.p`
@@ -72,7 +72,7 @@ const Desc = styled.p`
     font-size: 20px;
     font-weight: 800;
     letter-spacing: 3px;
-    color: #ffffff;
+    color: #000000;
 `;
 
 const Button = styled.button`
@@ -81,13 +81,17 @@ const Button = styled.button`
     font-weight: 800;
     background-color: transparent;
     cursor: pointer;
-    color: #ffffff;
+    color: #000000;
 `;
 
 const Slider = () => {
     const [slideIndex, setSlideIndex] = useState(0)
     const handleClick = (direction) => {
-
+        if (direction === "left") {
+            setSlideIndex(slideIndex > 0 ? slideIndex - 1 : 2)
+        } else {
+            setSlideIndex(slideIndex < 2 ? slideIndex + 1 : 0);
+        }
     };
 
     return (
@@ -95,11 +99,11 @@ const Slider = () => {
             <Arrow direction="left" onClick={()=>handleClick("left")}>
                 <ArrowLeftOutlined />
             </Arrow>
-            <Wrapper>
+            <Wrapper slideIndex={slideIndex}>
                 {sliderItems.map(item => ( 
                     <Slide bg={item.bg}>
                     <ImgContainer>
-                        <Image src={item.img} width={200} />
+                        <Image src={item.img} />
                     </ImgContainer>
                     <InfoContainer>
                         <Title>{item.title}</Title>
