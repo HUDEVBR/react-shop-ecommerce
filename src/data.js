@@ -45,83 +45,83 @@ export const categories = [
 export const popularProducts = [
     {
         id: 1,
-        img: "/images/ge_disjuntor_01.png",
+        img: "/images/3m_duplaface_fita_01.png",
     },
     {
         id: 2,
-        img: "/images/cobrecon_cabo_flexivel_01.png",
+        img: "/images/3m_fita_alta_tensao_01.png",
     },
     {
         id: 3,
-        img: "/images/lorenzetti_ducha_03.png",
+        img: "/images/3m_fita_fixa_forte_01.png",
     },
     {
         id: 4,
-        img: "/images/lorenzetti_ducha_03.png",
+        img: "/images/3m_fita_isolante_01.png",
     },
     {
         id: 5,
-        img: "/images/lorenzetti_ducha_03.png",
+        img: "/images/3m_fita_isolante_02.png",
     },
     {
         id: 6,
-        img: "/images/lorenzetti_ducha_03.png",
+        img: "/images/3m_fita_vhb_01.png",
     },
     {
         id: 7,
-        img: "/images/lorenzetti_ducha_03.png",
+        img: "/images/cobrecon_cabo_flexivel_01.png",
     },
     {
         id: 8,
-        img: "/images/lorenzetti_ducha_03.png",
+        img: "/images/cobrecon_cabo_flexivel_02.png",
     },
     {
         id: 9,
-        img: "/images/lorenzetti_ducha_03.png",
+        img: "/images/corfio_cabo_flexivel_01.png",
     },
     {
         id: 10,
-        img: "/images/lorenzetti_ducha_03.png",
+        img: "/images/fita_empacotar_01.png",
     },
     {
         id: 11,
-        img: "/images/lorenzetti_ducha_03.png",
+        img: "/images/ge_disjuntor_01.png",
     },
     {
         id: 12,
-        img: "/images/lorenzetti_ducha_03.png",
+        img: "/images/ge_disjuntor_02.png",
     },
     {
         id: 13,
-        img: "/images/lorenzetti_ducha_03.png",
+        img: "/images/ge_disjuntor_03.png",
     },
     {
         id: 14,
-        img: "/images/lorenzetti_ducha_03.png",
+        img: "/images/ge_disjuntor_nema_01.png",
     },
     {
         id: 15,
-        img: "/images/lorenzetti_ducha_03.png",
+        img: "/images/ge_disjuntor_nema_02.png",
     },
     {
         id: 16,
-        img: "/images/lorenzetti_ducha_03.png",
+        img: "/images/ge_disjuntor_nema_03.png",
     },
     {
         id: 17,
-        img: "/images/lorenzetti_ducha_03.png",
+        img: "/images/imperial_fita_isolante_colorida_01.png",
     },
     {
         id: 18,
-        img: "/images/lorenzetti_ducha_03.png",
+        img: "/images/lorenzetti_bella_filtro_01.png",
     },
     {
         id: 19,
-        img: "/images/lorenzetti_ducha_03.png",
+        img: "/images/lorenzetti_ducha_01.png",
     },
     {
         id: 20,
-        img: "/images/lorenzetti_ducha_03.png",
+        img: "/images/lorenzetti_ducha_02.png",
     },
     {
         id: 21,
@@ -129,32 +129,31 @@ export const popularProducts = [
     },
     {
         id: 22,
-        img: "/images/lorenzetti_ducha_03.png",
+        img: "/images/lorenzetti_ducha_04.png",
     },
     {
         id: 23,
-        img: "/images/lorenzetti_ducha_03.png",
+        img: "/images/lorenzetti_ducha_05.png",
     },
     {
         id: 24,
-        img: "/images/lorenzetti_ducha_03.png",
+        img: "/images/lorenzetti_resistencia_01.png",
     },
     {
         id: 25,
-        img: "/images/lorenzetti_ducha_03.png",
+        img: "/images/lorenzetti_resistencia_02.png",
     },
     {
         id: 26,
-        img: "/images/lorenzetti_ducha_03.png",
+        img: "/images/lumifacil_luminaria_01.png",
     },
-    ,
     {
         id: 27,
-        img: "/images/lorenzetti_ducha_03.png",
+        img: "/images/megatron_cabo_alarme_01.png",
     },
     {
         id: 28,
-        img: "/images/lorenzetti_ducha_03.png",
+        img: "/images/megatron_cabo_cci_01.png",
     },
     {
         id: 29,
