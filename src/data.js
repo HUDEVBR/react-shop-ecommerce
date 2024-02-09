@@ -24,6 +24,24 @@ export const sliderItems = [
     },
 ];
 
+export const categories = [
+    {
+        id: 1,
+        img: "/images/ge_disjuntor_01.png",
+        title: "DISJUNTORES",
+    },
+    {
+        id: 2,
+        img: "/images/cobrecon_cabo_flexivel_01.png",
+        title: "CABOS",
+    },
+    {
+        id: 3,
+        img: "/images/lorenzetti_ducha_03.png",
+        title: "CHUVEIROS",
+    },
+];
+
 export const popularProducts = [
     {
         id: 1,
@@ -227,4 +245,5 @@ export const popularProducts = [
         img: "/images/lorenzetti_ducha_03.png",
     },
 ];
+
 
