@@ -181,7 +181,7 @@ export const popularProducts = [
     },
     {
         id: 35,
-        img: "/imagespapaiz_golf_fechadura_01.png",
+        img: "/images/papaiz_golf_fechadura_01.png",
     },
     {
         id: 36,
