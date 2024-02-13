@@ -157,91 +157,91 @@ export const popularProducts = [
     },
     {
         id: 29,
-        img: "/images/lorenzetti_ducha_03.png",
+        img: "/images/megatron_cabo_coaxial_01.png",
     },
     {
         id: 30,
-        img: "/images/lorenzetti_ducha_03.png",
+        img: "/images/megatron_fio_bicolor_01.png",
     },
     {
         id: 31,
-        img: "/images/lorenzetti_ducha_03.png",
+        img: "/images/papaiz_cadeado_01.png",
     },
     {
         id: 32,
-        img: "/images/lorenzetti_ducha_03.png",
+        img: "/images/papaiz_cadeado_02.png",
     },
     {
         id: 33,
-        img: "/images/lorenzetti_ducha_03.png",
+        img: "/images/papaiz_cadeado_03.png",
     },
     {
         id: 34,
-        img: "/images/lorenzetti_ducha_03.png",
+        img: "/images/papaiz_fechadura_01.png",
     },
     {
         id: 35,
-        img: "/images/lorenzetti_ducha_03.png",
+        img: "/imagespapaiz_golf_fechadura_01.png",
     },
     {
         id: 36,
-        img: "/images/lorenzetti_ducha_03.png",
+        img: "/images/papaiz_golf_fechadura_02.png",
     },
     {
         id: 37,
-        img: "/images/lorenzetti_ducha_03.png",
+        img: "/images/starret_arco_de_serra_01.png",
     },
     {
         id: 38,
-        img: "/images/lorenzetti_ducha_03.png",
+        img: "/images/starret_broca_01.png",
     },
     {
         id: 39,
-        img: "/images/lorenzetti_ducha_03.png",
+        img: "/images/starret_estilete_01.png",
     },
     {
         id: 40,
-        img: "/images/lorenzetti_ducha_03.png",
+        img: "/images/starret_micro_oleo.png",
     },
     {
         id: 41,
-        img: "/images/lorenzetti_ducha_03.png",
+        img: "/images/starret_serra_01.png",
     },
     {
         id: 42,
-        img: "/images/lorenzetti_ducha_03.png",
+        img: "/images/starret_trena_com_blister_3m_01.png",
     },
     {
         id: 43,
-        img: "/images/lorenzetti_ducha_03.png",
+        img: "/images/starret_wd-40_lubrificante.png",
     },
     {
         id: 44,
-        img: "/images/lorenzetti_ducha_03.png",
+        img: "/images/taschibra_alltop_spot_01.png",
     },
     {
         id: 45,
-        img: "/images/lorenzetti_ducha_03.png",
+        img: "/images/taschibra_alltop_spot_02.png",
     },
     {
         id: 46,
-        img: "/images/lorenzetti_ducha_03.png",
+        img: "/images/taschibra_lampada_01.png",
     },
     {
         id: 47,
-        img: "/images/lorenzetti_ducha_03.png",
+        img: "/images/taschibra_lampada_02.png",
     },
     {
         id: 48,
-        img: "/images/lorenzetti_ducha_03.png",
+        img: "/images/taschibra_luminaria_01.png",
     },
     {
         id: 49,
-        img: "/images/lorenzetti_ducha_03.png",
+        img: "/images/taschibra_luminaria_02.png",
     },
     {
         id: 50,
-        img: "/images/lorenzetti_ducha_03.png",
+        img: "/images/taschibra_luminaria_03.png",
     },
 ];
 
