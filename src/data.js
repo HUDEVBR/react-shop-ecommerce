@@ -1,12 +1,10 @@
-import { Height } from "@material-ui/icons";
-
 export const sliderItems = [
     {
         id: 1,
         img: "/images/ge_disjuntor_01.png" ,
         title: "DISJUNTORES",
         desc: "Disjuntor para chuveiro elétrico, fiação de casas e apartamentos e demais eletrodomésticos",
-        bg: "2e3092",
+        bg: "#2e3092",
     },
     {
         id: 2,

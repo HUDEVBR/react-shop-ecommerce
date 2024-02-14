@@ -13,6 +13,8 @@ const Info = styled.div`
     display: flex;
     align-items: center;
     justify-content: center;
+    transition:all 0.5 ease;
+    cursor: pointer;
   `;
 
 const Container = styled.div`
