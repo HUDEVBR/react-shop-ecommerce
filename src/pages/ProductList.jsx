@@ -23,6 +23,17 @@ const Filter = styled.div`
 const FilterText = styled.span`
     font-size: 20px;
     font-weight: 600;
+    margin-right: 20px;
+`;
+
+const Select = styled.select`
+    padding: 10px;
+    margin-right: 20px;
+`;
+
+const Option = styled.option`
+    display: flex;
+    text-align: center;
 `;
 
 const ProductList = () => {
@@ -32,8 +43,40 @@ const ProductList = () => {
           <Announcement />
           <Title>Cabos</Title>
           <FilterContainer>
-              <Filter><FilterText>Filtrar Produtos:</FilterText></Filter>
-              <Filter><FilterText>Organizar Produtos:</FilterText></Filter>
+              <Filter>
+                  <FilterText>Filtrar Produtos:</FilterText>
+                  <Select>
+                      <Option disabled selected>
+                          Tipo de produto
+                      </Option>
+                      <Option>Cabos</Option>
+                      <Option>Chuveiros</Option>
+                      <Option>Cadeados</Option>
+                      <Option>Disjuntores</Option> 
+                      <Option>Lâmpadas</Option>
+                  </Select>
+                  <Select>
+                      <Option disabled selected>
+                          Marca
+                      </Option>
+                      <Option>3M</Option>
+                      <Option>Cobrecon</Option>
+                      <Option>G.E Genereal Eletric</Option>
+                      <Option>Lorenzetti</Option> 
+                      <Option>Papaiz</Option>
+                      <Option>Megatron</Option>
+                      <Option>Starret</Option> 
+                      <Option>Taschibra</Option>
+                  </Select>
+              </Filter>
+              <Filter>
+                  <FilterText>Organizar Produtos:</FilterText>
+                  <Select>
+                      <Option selected>Recentes</Option>
+                      <Option>Preço (cresc)</Option>
+                      <Option>Preço (decr)</Option>
+                  </Select>
+              </Filter>
           </FilterContainer>
           <Products />
           <Newsletter />
