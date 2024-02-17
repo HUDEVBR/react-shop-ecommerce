@@ -6,16 +6,68 @@ import Footer from "../components/Footer";
 
 const Container = styled.div``;
 
-const Wrapper = styled.div``;
-const ImgContainer = styled.div``;
-const Image = styled.img`
-    width: 20%;
-    margin-left: 30px;
+const Wrapper = styled.div`
+    padding: 50px;
+    display: flex;
 `;
-const InfoContainer = styled.div``;
-const Title = styled.div``;
-const Desc = styled.div``;
-const Price = styled.div``;
+const ImgContainer = styled.div`
+    flex: 1;
+`;
+
+const Image = styled.img`
+    width: 100%;
+    height: 90vh;
+    object-fit: cover;
+`;
+
+const InfoContainer = styled.div`
+    flex: 1;
+    padding: 0px 50px;
+`;
+
+const Title = styled.h1`
+    font-weight: 800;
+`;
+
+const Desc = styled.p`
+    font-weight: 400;
+    margin: 20px 0px;
+    font-size: 18px;
+`;
+
+const Price = styled.span`
+    font-weight: 100;
+    font-size: 40px;
+    
+`;
+
+const FilterContainer = styled.div`
+    width: 70%;
+    margin: 30px 0px;
+    display: flex;
+    justify-content: space-between;
+
+`;
+
+const Filter = styled.div`
+    display: flex;
+    align-content: center;
+
+`;
+const FilterTitle = styled.span`
+    font-size: 20px;
+    font-weight: 200;
+`;
+const FilterBrand = styled.h5`
+    width: 20px;
+    height:20px;
+    border-radius: 50%;
+    color: ${(props) => props.brand};
+    margin:0px 5px;
+`;
+const FilterValues = styled.select``;
+
+const FilterPrice = styled.option``;
 
 const Product = () => {
   return (
@@ -28,8 +80,32 @@ const Product = () => {
               </ImgContainer>
               <InfoContainer>
                   <Title>Produto</Title>
-                  <Desc>Descrição</Desc>
+                  <Desc>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Praesentium eaque iure atque? Hic vitae voluptatibus maiores exercitationem cumque odit quisquam officiis harum eius. Rerum vero corrupti debitis ea facilis quidem!</Desc>
                   <Price>R$ 50,00</Price>
+                  <FilterContainer>
+                  <Filter>
+                      <FilterTitle>Marca</FilterTitle>
+                      <FilterBrand brand="3M"></FilterBrand>
+                      <FilterBrand brand="G.E. General Eletrics"></FilterBrand>
+                      <FilterBrand brand="Cobrecon"></FilterBrand>
+                      <FilterBrand brand="Lorenzetti"></FilterBrand>
+                      <FilterBrand brand="Lumifacil"></FilterBrand>
+                      <FilterBrand brand="Megatron"></FilterBrand>
+                      <FilterBrand brand="Papaiz"></FilterBrand>
+                      <FilterBrand brand="Starret"></FilterBrand>
+                      <FilterBrand brand="Taschibra"></FilterBrand>
+                      <FilterBrand brand="Imperial"></FilterBrand>
+                  </Filter>
+                  <Filter>
+                      <FilterTitle >Preços</FilterTitle>    
+                          <FilterValues>
+                            <FilterPrice>Até R$ 50</FilterPrice>
+                            <FilterPrice>De R$ 51 Até R$ 100</FilterPrice>
+                            <FilterPrice>De R$ 101 Até R$ 200</FilterPrice>
+                            <FilterPrice>Mais de R$ 201</FilterPrice>
+                        </FilterValues>
+                  </Filter>
+              </FilterContainer>
               </InfoContainer>
           </Wrapper>
           <Newsletter />
