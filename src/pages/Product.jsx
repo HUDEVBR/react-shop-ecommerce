@@ -85,7 +85,7 @@ const Product = () => {
                   <FilterContainer>
                   <Filter>
                       <FilterTitle>Marca</FilterTitle>
-                      <FilterBrand brand="3M"></FilterBrand>
+                      <FilterBrand text="3M"></FilterBrand>
                       <FilterBrand brand="G.E. General Eletrics"></FilterBrand>
                       <FilterBrand brand="Cobrecon"></FilterBrand>
                       <FilterBrand brand="Lorenzetti"></FilterBrand>
