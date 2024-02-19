@@ -52,22 +52,37 @@ const FilterContainer = styled.div`
 const Filter = styled.div`
     display: flex;
     align-content: center;
-
+    
 `;
 const FilterTitle = styled.span`
     font-size: 20px;
     font-weight: 200;
+    padding: 0px 20px;
 `;
-const FilterBrand = styled.h5`
-    width: 20px;
-    height:20px;
-    border-radius: 50%;
-    color: ${(props) => props.brand};
-    margin:0px 5px;
-`;
-const FilterValues = styled.select``;
 
-const FilterPrice = styled.option``;
+const FilterBrandTypes = styled.label`
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    overflow-wrap: normal;
+
+`;
+
+const FilterBrand = styled.label`
+    width: 150%;
+    color: black;
+    margin:5px 5px;
+    display: block;
+    cursor: pointer;
+
+`;
+const FilterValues = styled.select`
+    height: 5vh;
+`;
+
+const FilterPrice = styled.option`
+    
+`;
 
 const Product = () => {
   return (
@@ -84,20 +99,22 @@ const Product = () => {
                   <Price>R$ 50,00</Price>
                   <FilterContainer>
                   <Filter>
-                      <FilterTitle>Marca</FilterTitle>
-                      <FilterBrand text="3M"></FilterBrand>
-                      <FilterBrand brand="G.E. General Eletrics"></FilterBrand>
-                      <FilterBrand brand="Cobrecon"></FilterBrand>
-                      <FilterBrand brand="Lorenzetti"></FilterBrand>
-                      <FilterBrand brand="Lumifacil"></FilterBrand>
-                      <FilterBrand brand="Megatron"></FilterBrand>
-                      <FilterBrand brand="Papaiz"></FilterBrand>
-                      <FilterBrand brand="Starret"></FilterBrand>
-                      <FilterBrand brand="Taschibra"></FilterBrand>
-                      <FilterBrand brand="Imperial"></FilterBrand>
+                          <FilterTitle>Marca:</FilterTitle>
+                                <FilterBrandTypes>
+                                    <FilterBrand value="0">3M</FilterBrand>
+                                    <FilterBrand value="1">G.E. General Eletrics</FilterBrand>
+                                    <FilterBrand value="2">Cobrecon</FilterBrand>
+                                    <FilterBrand value="3">Lorenzetti</FilterBrand>
+                                    <FilterBrand value="4">Lumifacil</FilterBrand>
+                                    <FilterBrand value="5">Megatron</FilterBrand>
+                                    <FilterBrand value="6">Papaiz</FilterBrand>
+                                    <FilterBrand value="7">Starret</FilterBrand>
+                                    <FilterBrand value="8">Taschibra</FilterBrand>
+                                    <FilterBrand value="9">Imperial</FilterBrand>
+                                </FilterBrandTypes>
                   </Filter>
                   <Filter>
-                      <FilterTitle >Preços</FilterTitle>    
+                      <FilterTitle >Preços:</FilterTitle>    
                           <FilterValues>
                             <FilterPrice>Até R$ 50</FilterPrice>
                             <FilterPrice>De R$ 51 Até R$ 100</FilterPrice>
