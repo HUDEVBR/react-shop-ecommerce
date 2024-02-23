@@ -3,6 +3,7 @@ import Navbar from "../components/Navbar"
 import Announcement from "../components/Announcement";
 import Newsletter from "../components/Newsletter";
 import Footer from "../components/Footer";
+import { Add, Remove } from "@material-ui/icons";
 
 const Container = styled.div``;
 
@@ -60,29 +61,33 @@ const FilterTitle = styled.span`
     padding: 0px 20px;
 `;
 
-const FilterBrandTypes = styled.label`
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    overflow-wrap: normal;
-
+const FilterBrandTypes = styled.select`
 `;
 
-const FilterBrand = styled.label`
+const FilterBrand = styled.option`
     width: 150%;
     color: black;
-    margin:5px 5px;
-    display: block;
+    margin:4px 5px;
     cursor: pointer;
+
+    &:active{
+        color: black;
+        font-weight: bolder
+    }
 
 `;
 const FilterValues = styled.select`
-    height: 5vh;
+    margin-left: 10px;
+    padding: 5px;
 `;
 
-const FilterPrice = styled.option`
-    
-`;
+const FilterPrice = styled.option``;
+
+const AddContainer = styled.div``;
+const AmountContainer = styled.div``;
+const Amount = styled.span``;
+const Button = styled.button``;
+
 
 const Product = () => {
   return (
@@ -100,7 +105,8 @@ const Product = () => {
                   <FilterContainer>
                   <Filter>
                           <FilterTitle>Marca:</FilterTitle>
-                                <FilterBrandTypes>
+                          <FilterBrandTypes>
+                                    <FilterBrand value="default"></FilterBrand>
                                     <FilterBrand value="0">3M</FilterBrand>
                                     <FilterBrand value="1">G.E. General Eletrics</FilterBrand>
                                     <FilterBrand value="2">Cobrecon</FilterBrand>
@@ -122,7 +128,15 @@ const Product = () => {
                             <FilterPrice>Mais de R$ 201</FilterPrice>
                         </FilterValues>
                   </Filter>
-              </FilterContainer>
+                  </FilterContainer>
+                  <AddContainer>
+                      <AmountContainer>
+                          <Remove />
+                          <Amount>1</Amount>
+                          <Add/>
+                      </AmountContainer>
+                      <Button>ADICIONAR AO CARRINHO</Button>
+                  </AddContainer>
               </InfoContainer>
           </Wrapper>
           <Newsletter />
