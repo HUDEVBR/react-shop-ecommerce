@@ -1,10 +1,13 @@
 import styled from "styled-components";
-import Logo from '../../public/images/background_jfmateriais.png'
+import logo from "../assets/images/background_jfmateriais.png"
+
 
 const Container = styled.div`
     width: 100vw;
-    height: 100px;
-    background-image: url(${Logo});
+    height: 100vh;
+    background: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.2)),url(${logo}) center;
+    background-size: 100vw;
+    background-repeat: no-repeat;
     `;
 
 const Wrapper = styled.div``;
@@ -18,6 +21,7 @@ const Input = styled.input``;
 const Agreement = styled.span``;
 
 const Button = styled.button``;
+const Image = styled.img``;
 
 const Register = () => {
   return (
