@@ -21,12 +21,13 @@ const Left = styled.div`
     flex: 1;
     display:flex;
     align-items: center;    
+    ${mobile({marginLeft: "5px"})}
 `;
 
 const Language = styled.span`
     font-size: 14px;
     cursor: pointer;
-    ${mobile({fontSize:"15px", padding: "2px" })}
+    ${mobile({display: "none"})}
 `;
 
 const SearchContainer = styled.div`
@@ -35,21 +36,23 @@ const SearchContainer = styled.div`
     align-items: center;
     margin-left: 25px;
     padding: 5px;
-    ${mobile({ margin:"2px" })}
+    ${mobile({ margin:"3px" })}
 `;
 
 const Input = styled.input`
     border: none;
+    ${mobile({width: "60px"})}
 `
 
 const Center = styled.div`
     flex: 1;
     text-align: center;
+    ${mobile({marginLeft: "10px"})}
 `;
 
 const Logo = styled.h1`
     font-weight: bold;
-    ${mobile({padding:"5px", fontSize: "12px"})}
+    ${mobile({padding: "8px ", fontSize: "18px"})}
 `;
 
 const Right = styled.div`
@@ -57,13 +60,14 @@ const Right = styled.div`
     display: flex;
     align-items: center;
     justify-content: flex-end;
+    ${mobile({flex: 2, justifyContent: "center", marginLeft: "-20px"})}
 `;
 
 const MenuItem = styled.div`
     font-size: 14px;
     cursor: pointer;
     margin-left: 25px;
-    ${mobile({position:"relative", margin: "5px", })}
+    ${mobile({ fontSize: "10px", marginLeft: "10px", fontWeight: "600" })}
 `
 
 const Navbar = () => {
@@ -73,7 +77,7 @@ const Navbar = () => {
               <Left>
                   <Language>BR</Language>
                   <SearchContainer>
-                      <Input/> 
+                      <Input placeholder="Pesquisar"/> 
                       <Search style={{color:"gray", fontSize:16}} />
                   </SearchContainer>
               </Left>

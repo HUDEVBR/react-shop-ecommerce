@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import logo from "../assets/images/background_jfmateriais.png"
+import { mobile } from "../responsive";
 
 const Container = styled.div`
     width: 100vw;
@@ -15,6 +16,7 @@ const Wrapper = styled.div`
   width: 25%;
   padding: 20px;
   background-color: white;
+  ${mobile({width: "75%", position: "absolute", bottom: "300px"})}
 `;
 
 const Title = styled.h1`
@@ -25,6 +27,7 @@ const Title = styled.h1`
 const Form = styled.form`
   display: flex;
   flex-direction: column;
+  
 `;
 
 const Input = styled.input`

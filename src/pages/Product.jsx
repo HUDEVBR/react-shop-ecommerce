@@ -4,12 +4,14 @@ import Announcement from "../components/Announcement";
 import Newsletter from "../components/Newsletter";
 import Footer from "../components/Footer";
 import { Add, Remove } from "@material-ui/icons";
+import { mobile } from "../responsive";
 
 const Container = styled.div``;
 
 const Wrapper = styled.div`
     padding: 50px;
     display: flex;
+    ${mobile({padding: "10px", flexDirection: "column"})}
 `;
 const ImgContainer = styled.div`
     flex: 1;
@@ -19,11 +21,13 @@ const Image = styled.img`
     width: 100%;
     height: 90vh;
     object-fit: cover;
+    ${mobile({width: "70%", height: "30vh"})}
 `;
 
 const InfoContainer = styled.div`
     flex: 1;
     padding: 0px 50px;
+    ${mobile({padding: "10px"})}
 `;
 
 const Title = styled.h1`
@@ -39,7 +43,6 @@ const Desc = styled.p`
 const Price = styled.span`
     font-weight: 100;
     font-size: 40px;
-    
 `;
 
 const FilterContainer = styled.div`
@@ -47,18 +50,20 @@ const FilterContainer = styled.div`
     margin: 30px 0px;
     display: flex;
     justify-content: space-between;
-
+    ${mobile({width: "100%", flexDirection: "column"})}
 `;
 
 const Filter = styled.div`
     display: flex;
     align-content: center;
+    ${mobile({margin: "10px", paddingTop: "-100px"})}
     
 `;
 const FilterTitle = styled.span`
     font-size: 20px;
     font-weight: 200;
     padding: 0px 20px;
+    ${mobile({padding: "0 10px"})}
 `;
 
 const FilterBrandTypes = styled.select`
@@ -74,7 +79,7 @@ const FilterBrand = styled.option`
         color: black;
         font-weight: bolder
     }
-
+    ${mobile({width: "40%"})}
 `;
 const FilterValues = styled.select`
     margin-left: 10px;
@@ -88,6 +93,7 @@ const AddContainer = styled.div`
     display: flex;
     align-items: center;
     justify-content: space-between;
+    ${mobile({width: "100%"})}
 `;
 
 const AmountContainer = styled.div`

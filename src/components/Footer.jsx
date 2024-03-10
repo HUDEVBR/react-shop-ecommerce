@@ -1,14 +1,17 @@
 import { EmailOutlined, Facebook, Instagram, Phone, Room, WhatsApp } from "@material-ui/icons";
 import styled from "styled-components";
+import { mobile } from "../responsive";
 
 const Container = styled.div`
     display: flex;
+    ${mobile({ flexDirection: "column" })}
 `;
 const Left = styled.div`
     flex: 1;
     display: flex;
     flex-direction: column;
     padding: 20px;
+    ${mobile({fontSize: "12px", padding: "5px"})}
 `;
 
 
@@ -20,6 +23,7 @@ const Desc = styled.p`
 
 const SocialContainer = styled.div`
     display: flex;
+    ${mobile({marginBottom: "10px"})}
     `;
 
 const SocialIcon = styled.div`
@@ -38,15 +42,19 @@ const SocialIcon = styled.div`
         justify-content: center;
         color: white;   
     }
+
+    ${mobile({width: "10%"})}
 `;
 
 const Center = styled.div`
     flex: 1;
     padding: 20px;
+    ${mobile({display: "none"})}
 `;
 
 const Title = styled.h3`
     margin-bottom: 30px;
+    ${mobile({marginBottom: "10px"})}
 `;
 
 const List = styled.ul`
@@ -61,17 +69,18 @@ const ListItem = styled.li`
     width: 50%;
     margin-bottom: 10px;
 `;
-
-    
+ 
 const Right = styled.div`
     flex: 1;
     padding: 20px;
+    ${mobile({fontSize: "12px", backgroundColor: "#eee", padding: "5px"})}
 `;
 
 const ContactItem = styled.div`
 margin-bottom: 20px;
 display: flex;
 align-items: center;
+${mobile({marginBottom: "10px"})}
 `;
 
 const Payment = styled.img`
@@ -117,7 +126,7 @@ const Footer = () => {
               </List>
           </Center>      
           <Right>
-              <Title></Title>
+              <Title>Contato</Title>
               <ContactItem><Room style={{marginRight:"10px"}} />RUA MARIA QUITERIA, 47, CORUMBÁ, NOVA IGUAÇU, RJ - 26041-740</ContactItem>
               <ContactItem><Phone style={{marginRight:"10px"}}/>(21)989197968</ContactItem>
               <ContactItem><EmailOutlined  style={{marginRight:"10px"}}/>jfengenhariabr@gmail.com</ContactItem>
