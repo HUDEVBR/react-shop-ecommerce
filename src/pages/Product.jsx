@@ -56,7 +56,7 @@ const FilterContainer = styled.div`
 const Filter = styled.div`
     display: flex;
     align-content: center;
-    ${mobile({margin: "10px", paddingTop: "-100px"})}
+    ${mobile({margin: "10px"})}
     
 `;
 const FilterTitle = styled.span`
