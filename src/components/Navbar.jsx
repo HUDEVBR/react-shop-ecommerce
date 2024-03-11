@@ -55,6 +55,7 @@ const Logo = styled.h1`
     ${mobile({padding: "8px ", fontSize: "18px"})}
 `;
 
+
 const Right = styled.div`
     flex: 1;    
     display: flex;
@@ -81,7 +82,7 @@ const Navbar = () => {
                       <Search style={{color:"gray", fontSize:16}} />
                   </SearchContainer>
               </Left>
-              <Center><Logo>J F MATERIAIS.</Logo></Center>
+              <Center><Logo >J F MATERIAIS.</Logo></Center>
               <Right>
                   <MenuItem>REGISTRAR</MenuItem>
                   <MenuItem>LOGAR</MenuItem>

@@ -133,7 +133,7 @@ const Product = () => {
           <Announcement />
           <Wrapper>
               <ImgContainer>
-                  <Image src="../../images/taschibra_luminaria_01.png" />
+                  <Image src="/images/taschibra_luminaria_01.png" />
               </ImgContainer>
               <InfoContainer>
                   <Title>Produto</Title>

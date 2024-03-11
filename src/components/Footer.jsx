@@ -4,27 +4,26 @@ import { mobile } from "../responsive";
 
 const Container = styled.div`
     display: flex;
-    ${mobile({ flexDirection: "column" })}
+    ${mobile({ flexDirection: "column" , height: "80vh", marginBottom: "20px"})}
 `;
 const Left = styled.div`
     flex: 1;
     display: flex;
     flex-direction: column;
     padding: 20px;
-    ${mobile({fontSize: "12px", padding: "5px"})}
+    ${mobile({fontSize: "12px", padding: "-15px", alignItems: "center", justifyContent: "center"})}
 `;
-
 
 const Logo = styled.h1``;
 
 const Desc = styled.p`
     margin: 20px 0px;
-    `;
+`;
 
 const SocialContainer = styled.div`
     display: flex;
-    ${mobile({marginBottom: "10px"})}
-    `;
+    ${mobile({marginBottom: "10px", justifyContent: "center"})}
+`;
 
 const SocialIcon = styled.div`
     width: 40px;
@@ -43,7 +42,7 @@ const SocialIcon = styled.div`
         color: white;   
     }
 
-    ${mobile({width: "10%"})}
+    ${mobile({width: "10vw"})}
 `;
 
 const Center = styled.div`
@@ -130,7 +129,7 @@ const Footer = () => {
               <ContactItem><Room style={{marginRight:"10px"}} />RUA MARIA QUITERIA, 47, CORUMBÁ, NOVA IGUAÇU, RJ - 26041-740</ContactItem>
               <ContactItem><Phone style={{marginRight:"10px"}}/>(21)989197968</ContactItem>
               <ContactItem><EmailOutlined  style={{marginRight:"10px"}}/>jfengenhariabr@gmail.com</ContactItem>
-              <Payment src="../images/tipos_pgto.png"/>
+              <Payment src="/images/tipos_pgto.png"/>
           </Right>      
       </Container>
   )
